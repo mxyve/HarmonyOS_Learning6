@@ -1,0 +1,55 @@
+{
+  "module": {
+    "name": "entry", // 模块名称
+    "type": "entry", // 模块类型（entry/feature/shared）
+    "description": "$string:module_desc", // 模块描述
+    "mainElement": "EntryAbility", // 主入口组件
+    "deviceTypes": [
+      // 支持的设备类型
+      "phone",
+      "tablet"
+    ],
+    "deliveryWithInstall": true, // 是否随应用安装
+    "installationFree": false, // 是否支持免安装
+    "pages": "$profile:main_pages", // 页面路由配置文件引用
+    "abilities": [
+      // Ability组件配置
+      {
+        "name": "EntryAbility", // Ability名称
+        "srcEntry": "./ets/entryability/EntryAbility.ets", // 源文件路径
+        "description": "$string:EntryAbility_desc", // 描述
+        "icon": "$media:layered_image",// 图标
+        "label": "$string:EntryAbility_label", // 标签
+        "startWindowIcon": "$media:startIcon",// 启动窗口图标
+        "startWindowBackground": "$color:start_window_background", // 启动窗口背景
+        "exported": true,// 是否可被其他应用调用
+        "skills": [
+          // 意图过滤器
+          {
+            "entities": [
+              "entity.system.home" // 系统home实体
+            ],
+            "actions": [
+              "ohos.want.action.home" // 系统home动作
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      // 权限申请
+      {
+        "name": "EntryBackupAbility",
+        "srcEntry": "./ets/entrybackupability/EntryBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "apiType": "stageMode", // API模式
+  "buildOption": {
+  },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false,
+            "files": [
+              "./obfuscation-rules.txt"
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "targets": [
+    // 构建目标配置
+    {
+      "name": "default" // 目标名称
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}

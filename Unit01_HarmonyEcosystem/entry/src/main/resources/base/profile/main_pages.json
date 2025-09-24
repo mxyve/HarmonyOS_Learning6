@@ -1,0 +1,12 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/DemoPage",
+    "pages/MainPage",
+    "pages/ResponsiveLayout",
+    "pages/StudentCard",
+    "pages/CountPage",
+    "pages/StudentPage",
+    "pages/CourseSchedulePage"
+  ]
+}

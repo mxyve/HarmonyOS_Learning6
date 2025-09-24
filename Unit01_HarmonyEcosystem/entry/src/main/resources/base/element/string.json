@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "学生信息助手"
+    },
+    {
+      "name": "welcome_message",
+      "value": "欢迎使用学生信息管理系统"
+    },
+    {
+      "name": "student_name_label",
+      "value": "学生姓名"
+    },
+    {
+      "name": "student_id_label",
+      "value": "学号"
+    },
+    {
+      "name": "module_desc",
+      "value": "课程表应用模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "应用的主Ability，处理应用启动、页面跳转等核心逻辑"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "我的课程表"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "entry",
+  "version": "1.0.0", // 项目版本
+  "description": "Please describe the basic information.", // 项目描述
+  "main": "", // 主入口文件
+  "author": "", // 作者信息
+  "license": "", // 许可证
+  "dependencies": {} // 运行时依赖
+}
+
