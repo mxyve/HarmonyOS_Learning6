@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Module Description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Ability Description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "App Label"
+    },
+    {
+      "name": "tab_workbench",
+      "value": "Workbench"
+    },
+    {
+      "name": "tab_mine",
+      "value": "Mine"
+    },
+    {
+      "name": "item_workbench",
+      "value": "Workbench"
+    },
+    {
+      "name": "item_demo",
+      "value": "DemoPage"
+    },
+    {
+      "name": "item_profile",
+      "value": "Profile"
+    }
+  ]
+}

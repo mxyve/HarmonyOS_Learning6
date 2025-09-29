@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "tab_workbench",
+      "value": "工作台"
+    },
+    {
+      "name": "tab_mine",
+      "value": "我的"
+    },
+    {
+      "name": "item_workbench",
+      "value": "工作台"
+    },
+    {
+      "name": "item_demo",
+      "value": "演示页面"
+    },
+    {
+      "name": "item_profile",
+      "value": "我的"
+    }
+  ]
+}
