@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Ability 描述信息"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "应用标签"
+    },
+    {
+      "name": "network_reason",
+      "value": "需要网络权限来加载头像图片"
+    },
+    {
+      "name": "component_tab_name",
+      "value": "组件"
+    },
+    {
+      "name": "layout_tab_name",
+      "value": "布局"
+    },
+    {
+      "name": "animation_tab_name",
+      "value": "动画"
+    },
+    {
+      "name": "text_component_name",
+      "value": "Text文本组件"
+    },
+    {
+      "name": "image_component_name",
+      "value": "Image图片组件"
+    },
+    {
+      "name": "button_component_name",
+      "value": "Button按钮组件"
+    },
+    {
+      "name": "text_input_component_name",
+      "value": "TextInput输入框组件"
+    },
+    {
+      "name": "list_component_name",
+      "value": "List列表组件"
+    },
+    {
+      "name": "layout1_name",
+      "value": "Layout1 综合布局练习"
+    },
+    {
+      "name": "layout2_name",
+      "value": "Layout2 二维布局练习"
+    },
+    {
+      "name": "animation_page_title",
+      "value": "动画页面 "
+    }
+  ]
+}

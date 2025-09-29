@@ -1,0 +1,36 @@
+{
+  "float": [
+    {
+      "name": "page_text_font_size",
+      "value": "50fp"
+    },
+    {
+      "name": "row_demo_image_size",
+      "value": "24vp"
+    },
+    {
+      "name": "row_demo_text_font_size",
+      "value": "12fp"
+    },
+    {
+      "name": "row_demo_button_width",
+      "value": "80vp"
+    },
+    {
+      "name": "row_demo_container_width",
+      "value": "300vp"
+    },
+    {
+      "name": "row_demo_container_height",
+      "value": "60vp"
+    },
+    {
+      "name": "row_demo_padding_horizontal",
+      "value": "20vp"
+    },
+    {
+      "name": "row_demo_space",
+      "value": "8vp"
+    }
+  ]
+}

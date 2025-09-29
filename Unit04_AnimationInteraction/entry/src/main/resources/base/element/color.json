@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "row_demo_bg_color",
+      "value": "#ff5d91bf"
+    },
+    {
+      "name": "row_demo_text_color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "row_demo_button_text_color",
+      "value": "#ff5d91bf"
+    },
+    {
+      "name": "row_demo_button_bg_color",
+      "value": "#ffffff"
+    }
+  ]
+}
