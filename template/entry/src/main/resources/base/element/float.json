@@ -1,0 +1,48 @@
+{
+  "float": [
+    {
+      "name": "title_text_size",
+      "value": "24fp"
+    },
+    {
+      "name": "subtitle_text_size",
+      "value": "18fp"
+    },
+    {
+      "name": "body_text_size",
+      "value": "16fp"
+    },
+    {
+      "name": "caption_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "small_text_size",
+      "value": "12fp"
+    },
+    {
+      "name": "button_height",
+      "value": "44vp"
+    },
+    {
+      "name": "button_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "card_radius",
+      "value": "12vp"
+    },
+    {
+      "name": "spacing_xs",
+      "value": "4vp"
+    },
+    {
+      "name": "spacing_s",
+      "value": "8vp"
+    },
+    {
+      "name": "spacing_m",
+      "value": "16vp"
+    }
+  ]
+}

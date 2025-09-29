@@ -1,0 +1,76 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "primary",
+      "value": "#007DFF"
+    },
+    {
+      "name": "primary_dark",
+      "value": "#0059C1"
+    },
+    {
+      "name": "primary_light",
+      "value": "#E5F2FF"
+    },
+    {
+      "name": "accent",
+      "value": "#FF6B35"
+    },
+    {
+      "name": "background",
+      "value": "#F8F9FA"
+    },
+    {
+      "name": "surface",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "on_primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "on_surface",
+      "value": "#1A1A1A"
+    },
+    {
+      "name": "text_primary",
+      "value": "#1A1A1A"
+    },
+    {
+      "name": "text_secondary",
+      "value": "#8A8A8A"
+    },
+    {
+      "name": "text_hint",
+      "value": "#B2B2B2"
+    },
+    {
+      "name": "divider",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "success",
+      "value": "#00C853"
+    },
+    {
+      "name": "warning",
+      "value": "#FFAB00"
+    },
+    {
+      "name": "error",
+      "value": "#FF3B30"
+    },
+    {
+      "name": "button_disabled",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "button_enabled",
+      "value": "#007DFF"
+    }
+  ]
+}

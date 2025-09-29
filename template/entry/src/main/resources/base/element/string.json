@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "home_title",
+      "value": "Home"
+    },
+    {
+      "name": "card_title_1",
+      "value": "Title 1"
+    },
+    {
+      "name": "card_desc_1",
+      "value": "Detail 1"
+    },
+    {
+      "name": "card_title_2",
+      "value": "Title 2"
+    },
+    {
+      "name": "card_desc_2",
+      "value": "Detail 2"
+    },
+    {
+      "name": "card_title_3",
+      "value": "Title 3"
+    },
+    {
+      "name": "card_desc_3",
+      "value": "Detail 3"
+    },
+    {
+      "name": "module_desc",
+      "value": "Module Description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Ability Description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "App Label"
+    },
+    {
+      "name": "network_reason",
+      "value": "Network permission is required to load avatar images"
+    }
+  ]
+}
