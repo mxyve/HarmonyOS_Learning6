@@ -5,11 +5,24 @@ import { SignPage } from './workbench/SignPage'
 import { CourseReminderPage } from './workbench/CourseReminderPage'
 import { QaInteractionPage } from './workbench/QaInteractionPage'
 import { HomeworkSubmissionPage } from './workbench/HomeworkSubmissionPage'
-import { DataStatisticsPage } from './workbench/DataStatistics/DataStatisticsPage'
-import { EmotionalInteractionPage } from './workbench/EmotionalInteraction/EmotionalInteractionPage'
-import  {StarDisplay} from './../components/StarDisplay'
-import {ParticleExample} from './../components/ParticleExample'
+import { DataStatisticsPage } from './workbench/dataStatistics/DataStatisticsPage'
+import { EmotionalInteractionPage } from './workbench/emotionalInteraction/EmotionalInteractionPage'
+import { StarDisplay } from './../components/StarDisplay'
+import { ParticleExample } from './../components/ParticleExample'
 import { StarSuccess } from './../components/StarSuccess'
+import { PersonalInfoPage } from './profile/profile/PersonalInfoPage'
+import { GradeQueryPage } from './profile/profile/GradeQueryPage'
+import { SchedulePage } from './profile/profile/SchedulePage'
+import { CampusServicePage } from './profile/profile/CampusServicePage'
+// 校园服务
+import { CanteenPage } from './profile/profile/campusService/CanteenPage'; // 食堂页面
+import { LibraryPage } from './profile/profile/campusService/LibraryPage'; // 图书馆页面
+import { GymPage } from './profile/profile/campusService/GymPage'; // 体育馆页面
+import { TeachingBuildingPage } from './profile/profile/campusService/TeachingBuildingPage'; // 教学楼页面
+import { CampusCardPage } from './profile/profile/campusService/CampusCardPage'; // 校园卡页面
+import { ElectricityRechargePage } from './profile/profile/campusService/ElectricityRechargePage'; // 电费充值页面
+import { InfirmaryPage } from './profile/profile/campusService/InfirmaryPage'; // 医务室页面
+import { LostFoundPage } from './profile/profile/campusService/LostFoundPage'; // 失物招领页面
 
 @Entry
 @Component
@@ -26,7 +39,6 @@ export struct MainPage {
     .navDestination(this.pageMap)
     .hideTitleBar(true)
     .backgroundColor('#F5F5F5')
-
   }
 
   @Builder
@@ -47,12 +59,36 @@ export struct MainPage {
       DataStatisticsPage();
     } else if (name === 'EmotionalInteractionPage') {
       EmotionalInteractionPage();
-    } else if (name === 'StarDisplay'){
+    } else if (name === 'StarDisplay') {
       StarDisplay();
-    } else if (name === 'ParticleExample'){
+    } else if (name === 'ParticleExample') {
       ParticleExample();
-    } else if (name === 'StarSuccess'){
+    } else if (name === 'StarSuccess') {
       StarSuccess();
+    } else if (name === 'PersonalInfoPage') {
+      PersonalInfoPage();
+    } else if (name === 'GradeQueryPage') {
+      GradeQueryPage();
+    } else if (name === 'SchedulePage') {
+      SchedulePage();
+    } else if (name === 'CampusServicePage') {
+      CampusServicePage();
+    } else if (name === 'CanteenPage') {
+      CanteenPage();
+    } else if (name === 'LibraryPage') {
+      LibraryPage();
+    } else if (name === 'GymPage') {
+      GymPage();
+    } else if (name === 'TeachingBuildingPage') {
+      TeachingBuildingPage();
+    } else if (name === 'CampusCardPage') {
+      CampusCardPage();
+    } else if (name === 'ElectricityRechargePage') {
+      ElectricityRechargePage();
+    } else if (name === 'InfirmaryPage') {
+      InfirmaryPage();
+    } else if (name === 'LostFoundPage') {
+      LostFoundPage();
     }
   }
 }

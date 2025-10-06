@@ -5,6 +5,12 @@ interface TabItem {
   selectedIcon: Resource;
 }
 
+interface HomePageItem {
+  id: number;
+  name: string;
+  pageName: string;
+}
+
 interface WorkbenchItem {
   id: number;
   name: string;
@@ -25,6 +31,11 @@ export struct HomePage {
   /* ---- 底部导航数据 ---- */
   private tabsData: TabItem[] = [
     {
+      name: '首页',
+      normalIcon: $r('app.media.ic_layout_normal'),
+      selectedIcon: $r('app.media.ic_layout_selected')
+    },
+    {
       name: '工作台',
       normalIcon: $r('app.media.ic_workbench_normal'),
       selectedIcon: $r('app.media.ic_workbench_selected')
@@ -36,6 +47,9 @@ export struct HomePage {
     }
   ];
   /* ---- 组件列表数据 ---- */
+  private homePageItem: HomePageItem[] = [
+    { id: 2, name: '签到场景', pageName: 'SignPage' },
+  ];
   private workbenchItem: WorkbenchItem[] = [
     { id: 1, name: '工作台', pageName: 'WorkbenchPage' },
     { id: 2, name: '签到场景', pageName: 'SignPage' },
@@ -49,7 +63,11 @@ export struct HomePage {
     { id: 10, name: 'StarSuccess', pageName: 'StarSuccess' },
   ];
   private profileItem: ProfileItem[] = [
-    { id: 1, name: '我的', pageName: 'ProfilePage' }
+    { id: 1, name: '我的', pageName: 'ProfilePage' },
+    { id: 2, name: '个人信息页', pageName: 'PersonalInfoPage' },
+    { id: 3, name: '成绩查询页', pageName: 'GradeQueryPage' },
+    { id: 4, name: '课表查看页', pageName: 'SchedulePage' },
+    { id: 5, name: '校园服务页', pageName: 'CampusServicePage' },
   ];
 
   build() {
@@ -58,17 +76,23 @@ export struct HomePage {
       index: this.currentIndex,
       controller: new TabsController()
     }) {
+      /* 首页 Tab */
+      TabContent() {
+        this.HomePageTab()
+      }
+      .tabBar(this.TabBuilder(0))
+
       /* 工作台 Tab */
       TabContent() {
         this.WorkbenchTab()
       }
-      .tabBar(this.TabBuilder(0))
+      .tabBar(this.TabBuilder(1))
 
       /* 我的 Tab */
       TabContent() {
         this.ProfileTab()
       }
-      .tabBar(this.TabBuilder(1))
+      .tabBar(this.TabBuilder(2))
 
     }
     .barPosition(BarPosition.End)
@@ -76,6 +100,52 @@ export struct HomePage {
     .width('100%')
     .height('100%')
     .backgroundColor('#F5F5F5');
+  }
+
+  /* ---------------- 首页 Tab ---------------- */
+  @Builder
+  HomePageTab() {
+    List({ space: 12 }) {
+      ForEach(this.homePageItem, (item: HomePageItem) => {
+        ListItem() {
+          Text(item.name)
+            .width('100%')
+            .height(72)
+            .backgroundColor('#FFFFFF')
+            .borderRadius(24)
+            .fontSize(16)
+            .textAlign(TextAlign.Center)
+            .onClick(() => {
+              this.pageInfos.pushPath({ name: item.pageName });
+            });
+        }
+      }, (item: HomePageItem) => item.id.toString());
+    }
+    .width('90%')
+    .margin({ top: 12 });
+  }
+
+  /* ---------------- 工作台 Tab ---------------- */
+  @Builder
+  WorkbenchTab() {
+    List({ space: 12 }) {
+      ForEach(this.workbenchItem, (item: WorkbenchItem) => {
+        ListItem() {
+          Text(item.name)
+            .width('100%')
+            .height(72)
+            .backgroundColor('#FFFFFF')
+            .borderRadius(24)
+            .fontSize(16)
+            .textAlign(TextAlign.Center)
+            .onClick(() => {
+              this.pageInfos.pushPath({ name: item.pageName });
+            });
+        }
+      }, (item: WorkbenchItem) => item.id.toString());
+    }
+    .width('90%')
+    .margin({ top: 12 });
   }
 
   /* ---------------- 我的 Tab ---------------- */
@@ -102,29 +172,6 @@ export struct HomePage {
     .width('90%')
     .margin({ top: 12 })
     .backgroundColor('#F5F5F5');
-  }
-
-  /* ---------------- 工作台 Tab ---------------- */
-  @Builder
-  WorkbenchTab() {
-    List({ space: 12 }) {
-      ForEach(this.workbenchItem, (item: WorkbenchItem) => {
-        ListItem() {
-          Text(item.name)
-            .width('100%')
-            .height(72)
-            .backgroundColor('#FFFFFF')
-            .borderRadius(24)
-            .fontSize(16)
-            .textAlign(TextAlign.Center)
-            .onClick(() => {
-              this.pageInfos.pushPath({ name: item.pageName });
-            });
-        }
-      }, (item: WorkbenchItem) => item.id.toString());
-    }
-    .width('90%')
-    .margin({ top: 12 });
   }
 
   /* ---------------- 底部导航栏 Builder ---------------- */

@@ -1,12 +1,26 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\12862\\.ohos\\config\\default_ClassroomAssistant_rUZ8r01XkgvL1xVgREHuO4lv4j9Kayit32hZqu8Eesc=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B61269BE2E813E2F6661822872C12C3348B1CB48C6AD1EE20F98A9FA7B32DAAB2AC6237A597DEAC",
+          "profile": "C:\\Users\\12862\\.ohos\\config\\default_ClassroomAssistant_rUZ8r01XkgvL1xVgREHuO4lv4j9Kayit32hZqu8Eesc=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\12862\\.ohos\\config\\default_ClassroomAssistant_rUZ8r01XkgvL1xVgREHuO4lv4j9Kayit32hZqu8Eesc=.p12",
+          "storePassword": "0000001B8ECAB93318006F0BBB09821BF347A0C07D2FEF93BA673817E808791DE0DE584332E87AE3A3A858"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "targetSdkVersion": "5.1.1(19)",
-        "compatibleSdkVersion": "5.1.1(19)",
+        "targetSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersion": "5.0.5(17)",
         "runtimeOS": "HarmonyOS",
         "buildOption": {
           "strictMode": {
